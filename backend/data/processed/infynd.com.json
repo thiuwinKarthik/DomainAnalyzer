@@ -1,0 +1,108 @@
+{
+    "profile": {
+        "domain": "infynd.com",
+        "company_name": "Infynd",
+        "tech_stack": [
+            "Google Analytics",
+            "Google Tag Manager"
+        ],
+        "sic_code": "62012",
+        "sic_text": "Business and domestic software development",
+        "industry": "Information Technology",
+        "sector": "Information Technology",
+        "sub_industry": "Software Development & Services",
+        "short_description": "A leading Information Technology company.",
+        "long_description": "Infynd is a key player in the Information Technology sector, offering specialized services.",
+        "tags": "information technology, technology, business, services",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_infynd.com",
+                "label": "Infynd",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Information Technology",
+                "label": "Information Technology",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_information technology",
+                "label": "information technology",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_technology",
+                "label": "technology",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_business",
+                "label": "business",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_services",
+                "label": "services",
+                "group": "Tag"
+            },
+            {
+                "id": "tech_Google Analytics",
+                "label": "Google Analytics",
+                "group": "Technology"
+            },
+            {
+                "id": "tech_Google Tag Manager",
+                "label": "Google Tag Manager",
+                "group": "Technology"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_infynd.com",
+                "target": "industry_Information Technology",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_infynd.com",
+                "target": "tag_information technology",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_infynd.com",
+                "target": "tag_technology",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_infynd.com",
+                "target": "tag_business",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_infynd.com",
+                "target": "tag_services",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_infynd.com",
+                "target": "tech_Google Analytics",
+                "label": "USES_TECH"
+            },
+            {
+                "source": "company_infynd.com",
+                "target": "tech_Google Tag Manager",
+                "label": "USES_TECH"
+            }
+        ]
+    }
+}

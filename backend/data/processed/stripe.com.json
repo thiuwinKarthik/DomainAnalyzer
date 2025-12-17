@@ -1,0 +1,88 @@
+{
+  "profile": {
+    "domain": "stripe.com",
+    "company_name": "Stripe",
+    "tech_stack": [
+      "Google Tag Manager"
+    ],
+    "sic_code": "66190",
+    "sic_text": "Activities auxiliary to financial services",
+    "industry": "Payment",
+    "short_description": "A leading Payment company operating at stripe.com.",
+    "long_description": "Stripe is a key player in the Payment sector, offering specialized digital services.",
+    "sector": "Information Technology",
+    "sub_industry": "Digital Services",
+    "tags": "Payment, technology, business, services"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "stripe.com",
+        "label": "Stripe",
+        "group": "Company"
+      },
+      {
+        "id": "Payment",
+        "label": "Payment",
+        "group": "Industry"
+      },
+      {
+        "id": "Payment",
+        "label": "Payment",
+        "group": "Tag"
+      },
+      {
+        "id": "technology",
+        "label": "technology",
+        "group": "Tag"
+      },
+      {
+        "id": "business",
+        "label": "business",
+        "group": "Tag"
+      },
+      {
+        "id": "services",
+        "label": "services",
+        "group": "Tag"
+      },
+      {
+        "id": "Google Tag Manager",
+        "label": "Google Tag Manager",
+        "group": "Technology"
+      }
+    ],
+    "edges": [
+      {
+        "source": "stripe.com",
+        "target": "Payment",
+        "label": "OPERATES_IN"
+      },
+      {
+        "source": "stripe.com",
+        "target": "Payment",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "stripe.com",
+        "target": "technology",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "stripe.com",
+        "target": "business",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "stripe.com",
+        "target": "services",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "stripe.com",
+        "target": "Google Tag Manager",
+        "label": "USES_TECH"
+      }
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+    "profile": {
+        "domain": "afreespace.com",
+        "company_name": "Afreespace",
+        "tech_stack": [
+            "Google Analytics"
+        ],
+        "sic_code": "62012",
+        "sic_text": "Business and domestic software development",
+        "industry": "Information Technology",
+        "sector": "Information Technology",
+        "sub_industry": "Software Development & Services",
+        "short_description": "A leading Information Technology company.",
+        "long_description": "Afreespace is a key player in the Information Technology sector, offering specialized services.",
+        "tags": "information technology, technology, business, services",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_afreespace.com",
+                "label": "Afreespace",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Information Technology",
+                "label": "Information Technology",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_information technology",
+                "label": "information technology",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_technology",
+                "label": "technology",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_business",
+                "label": "business",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_services",
+                "label": "services",
+                "group": "Tag"
+            },
+            {
+                "id": "tech_Google Analytics",
+                "label": "Google Analytics",
+                "group": "Technology"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_afreespace.com",
+                "target": "industry_Information Technology",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_afreespace.com",
+                "target": "tag_information technology",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_afreespace.com",
+                "target": "tag_technology",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_afreespace.com",
+                "target": "tag_business",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_afreespace.com",
+                "target": "tag_services",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_afreespace.com",
+                "target": "tech_Google Analytics",
+                "label": "USES_TECH"
+            }
+        ]
+    }
+}

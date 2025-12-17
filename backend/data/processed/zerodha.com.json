@@ -1,0 +1,88 @@
+{
+  "profile": {
+    "domain": "zerodha.com",
+    "company_name": "Zerodha",
+    "tech_stack": [
+      "Google Analytics"
+    ],
+    "sic_code": "66120",
+    "sic_text": "Security and commodity contracts brokerage",
+    "industry": "Financial Services",
+    "short_description": "A leading Financial Services company operating at zerodha.com.",
+    "long_description": "Zerodha is a key player in the Financial Services sector, offering specialized digital services.",
+    "sector": "Information Technology",
+    "sub_industry": "Digital Services",
+    "tags": "Financial Services, technology, business, services"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "zerodha.com",
+        "label": "Zerodha",
+        "group": "Company"
+      },
+      {
+        "id": "Financial Services",
+        "label": "Financial Services",
+        "group": "Industry"
+      },
+      {
+        "id": "Financial Services",
+        "label": "Financial Services",
+        "group": "Tag"
+      },
+      {
+        "id": "technology",
+        "label": "technology",
+        "group": "Tag"
+      },
+      {
+        "id": "business",
+        "label": "business",
+        "group": "Tag"
+      },
+      {
+        "id": "services",
+        "label": "services",
+        "group": "Tag"
+      },
+      {
+        "id": "Google Analytics",
+        "label": "Google Analytics",
+        "group": "Technology"
+      }
+    ],
+    "edges": [
+      {
+        "source": "zerodha.com",
+        "target": "Financial Services",
+        "label": "OPERATES_IN"
+      },
+      {
+        "source": "zerodha.com",
+        "target": "Financial Services",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "zerodha.com",
+        "target": "technology",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "zerodha.com",
+        "target": "business",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "zerodha.com",
+        "target": "services",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "zerodha.com",
+        "target": "Google Analytics",
+        "label": "USES_TECH"
+      }
+    ]
+  }
+}

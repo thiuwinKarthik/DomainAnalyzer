@@ -1,0 +1,223 @@
+.company-details-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 3px solid #e0e0e0;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.details-header h2 {
+  color: #667eea;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.download-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.download-btn {
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.download-btn:active {
+  transform: translateY(-1px);
+}
+
+.details-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.details-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-radius: 12px;
+  padding: 2.5rem;
+  border: 2px solid #e9ecef;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.details-section:hover {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #667eea;
+}
+
+.section-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.section-title {
+  color: #333;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fields-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.field-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.field-item:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: translateX(5px);
+}
+
+.field-item.highlight {
+  background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+  border-left-color: #764ba2;
+  border-left-width: 5px;
+}
+
+.field-item.full-width {
+  width: 100%;
+}
+
+.field-label {
+  font-weight: 700;
+  color: #555;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.field-label::before {
+  content: '▸';
+  color: #667eea;
+  font-size: 1.2rem;
+}
+
+.field-value {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+.field-item.highlight .field-value {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+  font-weight: 500;
+  font-size: 1.15rem;
+}
+
+.field-item.full-width .field-value {
+  min-height: 4rem;
+  padding: 1.25rem;
+}
+
+.empty-value {
+  color: #999;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .company-details-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .details-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 1.5rem;
+  }
+
+  .details-header h2 {
+    font-size: 2rem;
+  }
+
+  .download-buttons {
+    width: 100%;
+  }
+
+  .download-btn {
+    flex: 1;
+    min-width: 150px;
+  }
+
+  .details-section {
+    padding: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .field-item {
+    padding: 1rem;
+  }
+
+  .field-value {
+    font-size: 1rem;
+    padding: 0.875rem;
+  }
+}

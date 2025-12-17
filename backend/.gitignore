@@ -1,0 +1,6 @@
+backend/data/offline_sites/
+data/offline_sites/
+logs/
+*.log
+__pycache__/
+.env

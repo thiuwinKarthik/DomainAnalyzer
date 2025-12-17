@@ -1,0 +1,108 @@
+{
+    "profile": {
+        "domain": "complexcoldforming.com",
+        "company_name": "Complexcoldforming",
+        "tech_stack": [
+            "React",
+            "Google Analytics"
+        ],
+        "sic_code": "20590",
+        "sic_text": "Manufacture of other chemical products n.e.c.",
+        "industry": "Chemical Products & Chemicals",
+        "sector": "Construction & Materials",
+        "sub_industry": "Software Development & Services",
+        "short_description": "A leading Chemical Products & Chemicals company.",
+        "long_description": "Complexcoldforming is a key player in the Chemical Products & Chemicals sector, offering specialized services.",
+        "tags": "chemical products & chemicals, technology, business, services",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_complexcoldforming.com",
+                "label": "Complexcoldforming",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Chemical Products & Chemicals",
+                "label": "Chemical Products & Chemicals",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_chemical products & chemicals",
+                "label": "chemical products & chemicals",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_technology",
+                "label": "technology",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_business",
+                "label": "business",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_services",
+                "label": "services",
+                "group": "Tag"
+            },
+            {
+                "id": "tech_React",
+                "label": "React",
+                "group": "Technology"
+            },
+            {
+                "id": "tech_Google Analytics",
+                "label": "Google Analytics",
+                "group": "Technology"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_complexcoldforming.com",
+                "target": "industry_Chemical Products & Chemicals",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_complexcoldforming.com",
+                "target": "tag_chemical products & chemicals",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_complexcoldforming.com",
+                "target": "tag_technology",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_complexcoldforming.com",
+                "target": "tag_business",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_complexcoldforming.com",
+                "target": "tag_services",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_complexcoldforming.com",
+                "target": "tech_React",
+                "label": "USES_TECH"
+            },
+            {
+                "source": "company_complexcoldforming.com",
+                "target": "tech_Google Analytics",
+                "label": "USES_TECH"
+            }
+        ]
+    }
+}

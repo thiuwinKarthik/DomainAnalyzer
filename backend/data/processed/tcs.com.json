@@ -1,0 +1,99 @@
+{
+  "profile": {
+    "domain": "tcs.com",
+    "company_name": "Tcs",
+    "tech_stack": [
+      "OneTrust",
+      "Google Analytics"
+    ],
+    "sic_code": "62020",
+    "sic_text": "Information technology consultancy activities",
+    "industry": "Technology",
+    "short_description": "A leading Technology company operating at tcs.com.",
+    "long_description": "Tcs is a key player in the Technology sector, offering specialized digital services.",
+    "sector": "Information Technology",
+    "sub_industry": "Digital Services",
+    "tags": "Technology, technology, business, services"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "tcs.com",
+        "label": "Tcs",
+        "group": "Company"
+      },
+      {
+        "id": "Technology",
+        "label": "Technology",
+        "group": "Industry"
+      },
+      {
+        "id": "Technology",
+        "label": "Technology",
+        "group": "Tag"
+      },
+      {
+        "id": "technology",
+        "label": "technology",
+        "group": "Tag"
+      },
+      {
+        "id": "business",
+        "label": "business",
+        "group": "Tag"
+      },
+      {
+        "id": "services",
+        "label": "services",
+        "group": "Tag"
+      },
+      {
+        "id": "OneTrust",
+        "label": "OneTrust",
+        "group": "Technology"
+      },
+      {
+        "id": "Google Analytics",
+        "label": "Google Analytics",
+        "group": "Technology"
+      }
+    ],
+    "edges": [
+      {
+        "source": "tcs.com",
+        "target": "Technology",
+        "label": "OPERATES_IN"
+      },
+      {
+        "source": "tcs.com",
+        "target": "Technology",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "tcs.com",
+        "target": "technology",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "tcs.com",
+        "target": "business",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "tcs.com",
+        "target": "services",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "tcs.com",
+        "target": "OneTrust",
+        "label": "USES_TECH"
+      },
+      {
+        "source": "tcs.com",
+        "target": "Google Analytics",
+        "label": "USES_TECH"
+      }
+    ]
+  }
+}

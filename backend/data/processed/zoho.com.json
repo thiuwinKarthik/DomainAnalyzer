@@ -1,0 +1,88 @@
+{
+  "profile": {
+    "domain": "zoho.com",
+    "company_name": "Zoho",
+    "tech_stack": [
+      "Google Analytics"
+    ],
+    "sic_code": "66120",
+    "sic_text": "Security and commodity contracts brokerage",
+    "industry": "Invest",
+    "short_description": "A leading Invest company operating at zoho.com.",
+    "long_description": "Zoho is a key player in the Invest sector, offering specialized digital services.",
+    "sector": "Information Technology",
+    "sub_industry": "Digital Services",
+    "tags": "Invest, technology, business, services"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "zoho.com",
+        "label": "Zoho",
+        "group": "Company"
+      },
+      {
+        "id": "Invest",
+        "label": "Invest",
+        "group": "Industry"
+      },
+      {
+        "id": "Invest",
+        "label": "Invest",
+        "group": "Tag"
+      },
+      {
+        "id": "technology",
+        "label": "technology",
+        "group": "Tag"
+      },
+      {
+        "id": "business",
+        "label": "business",
+        "group": "Tag"
+      },
+      {
+        "id": "services",
+        "label": "services",
+        "group": "Tag"
+      },
+      {
+        "id": "Google Analytics",
+        "label": "Google Analytics",
+        "group": "Technology"
+      }
+    ],
+    "edges": [
+      {
+        "source": "zoho.com",
+        "target": "Invest",
+        "label": "OPERATES_IN"
+      },
+      {
+        "source": "zoho.com",
+        "target": "Invest",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "zoho.com",
+        "target": "technology",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "zoho.com",
+        "target": "business",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "zoho.com",
+        "target": "services",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "zoho.com",
+        "target": "Google Analytics",
+        "label": "USES_TECH"
+      }
+    ]
+  }
+}

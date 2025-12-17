@@ -1,0 +1,99 @@
+{
+  "profile": {
+    "domain": "airbnb.com",
+    "company_name": "Airbnb",
+    "tech_stack": [
+      "Google Tag Manager",
+      "Google Analytics"
+    ],
+    "sic_code": "79110",
+    "sic_text": "Travel agency activities",
+    "industry": "Travel",
+    "short_description": "A leading Travel company operating at airbnb.com.",
+    "long_description": "Airbnb is a key player in the Travel sector, offering specialized digital services.",
+    "sector": "Information Technology",
+    "sub_industry": "Digital Services",
+    "tags": "Travel, technology, business, services"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "airbnb.com",
+        "label": "Airbnb",
+        "group": "Company"
+      },
+      {
+        "id": "Travel",
+        "label": "Travel",
+        "group": "Industry"
+      },
+      {
+        "id": "Travel",
+        "label": "Travel",
+        "group": "Tag"
+      },
+      {
+        "id": "technology",
+        "label": "technology",
+        "group": "Tag"
+      },
+      {
+        "id": "business",
+        "label": "business",
+        "group": "Tag"
+      },
+      {
+        "id": "services",
+        "label": "services",
+        "group": "Tag"
+      },
+      {
+        "id": "Google Tag Manager",
+        "label": "Google Tag Manager",
+        "group": "Technology"
+      },
+      {
+        "id": "Google Analytics",
+        "label": "Google Analytics",
+        "group": "Technology"
+      }
+    ],
+    "edges": [
+      {
+        "source": "airbnb.com",
+        "target": "Travel",
+        "label": "OPERATES_IN"
+      },
+      {
+        "source": "airbnb.com",
+        "target": "Travel",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "airbnb.com",
+        "target": "technology",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "airbnb.com",
+        "target": "business",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "airbnb.com",
+        "target": "services",
+        "label": "TAGGED_AS"
+      },
+      {
+        "source": "airbnb.com",
+        "target": "Google Tag Manager",
+        "label": "USES_TECH"
+      },
+      {
+        "source": "airbnb.com",
+        "target": "Google Analytics",
+        "label": "USES_TECH"
+      }
+    ]
+  }
+}

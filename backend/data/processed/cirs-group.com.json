@@ -1,0 +1,108 @@
+{
+    "profile": {
+        "domain": "cirs-group.com",
+        "company_name": "Cirs-group",
+        "tech_stack": [
+            "Google Tag Manager",
+            "Google Analytics"
+        ],
+        "sic_code": "82990",
+        "sic_text": "Other business support service activities n.e.c.",
+        "industry": "Property Rental & Real Estate Services",
+        "sector": "Real Estate",
+        "sub_industry": "Software Development & Services",
+        "short_description": "A leading Property Rental & Real Estate Services company.",
+        "long_description": "Cirs-group is a key player in the Property Rental & Real Estate Services sector, offering specialized services.",
+        "tags": "property rental & real estate services, technology, business, services",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_cirs-group.com",
+                "label": "Cirs-group",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Property Rental & Real Estate Services",
+                "label": "Property Rental & Real Estate Services",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_property rental & real estate services",
+                "label": "property rental & real estate services",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_technology",
+                "label": "technology",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_business",
+                "label": "business",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_services",
+                "label": "services",
+                "group": "Tag"
+            },
+            {
+                "id": "tech_Google Tag Manager",
+                "label": "Google Tag Manager",
+                "group": "Technology"
+            },
+            {
+                "id": "tech_Google Analytics",
+                "label": "Google Analytics",
+                "group": "Technology"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_cirs-group.com",
+                "target": "industry_Property Rental & Real Estate Services",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_cirs-group.com",
+                "target": "tag_property rental & real estate services",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_cirs-group.com",
+                "target": "tag_technology",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_cirs-group.com",
+                "target": "tag_business",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_cirs-group.com",
+                "target": "tag_services",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_cirs-group.com",
+                "target": "tech_Google Tag Manager",
+                "label": "USES_TECH"
+            },
+            {
+                "source": "company_cirs-group.com",
+                "target": "tech_Google Analytics",
+                "label": "USES_TECH"
+            }
+        ]
+    }
+}
