@@ -173,6 +173,7 @@ class BatchProcessor:
         Maps extracted data to proper SIC codes from sub_Industry_Classification.csv
         """
         # Combine all text for classification matching
+        # Combine all text for classification matching
         search_text = (
             str(profile.get("long_description", "")) + " " +
             str(profile.get("short_description", "")) + " " +
@@ -180,25 +181,43 @@ class BatchProcessor:
             str(profile.get("industry", "")) + " " +
             str(profile.get("sub_industry", "")) + " " +
             raw_text[:3000]
-        )
+        ).lower()
         
-        # Get classification from service
-        classification = self.classifier.find_best_match(
-            company_text=search_text,
-            industry=profile.get("industry", ""),
-            sub_industry=profile.get("sub_industry", "")
-        )
+        classification = None
+        
+        # --- 0. TRUTH TABLE CHECK ---
+        # Check if any key keywords in SIC_MAP exist in the text with high confidence
+        # We prioritize this over generic matching
+        # print(f"[DEBUG] Checking Truth Table against text ({len(search_text)} chars)...")
+        for keyword, (sic_code, sic_desc) in self.SIC_MAP.items():
+            # Check for keyword with boundaries to avoid partial matches (e.g. "stay" in "stayed")
+            if re.search(r'\b' + re.escape(keyword) + r'\b', search_text):
+                # print(f"[DEBUG] Truth Table Match: '{keyword}' -> {sic_code}")
+                # Try to get full classification details from the CSV for this SIC code
+                classification = self.classifier.get_classification_by_sic_code(sic_code)
+                if classification:
+                    print(f"[INFO] Using Truth Table classification: {classification['sub_industry']} (SIC: {sic_code})")
+                    break
+        
+        # If no truth table match, use standard classification service
+        if not classification:
+            # print("[DEBUG] No Truth Table match, using standard classification...")
+            classification = self.classifier.find_best_match(
+                company_text=search_text,
+                industry=profile.get("industry", ""),
+                sub_industry=profile.get("sub_industry", "")
+            )
         
         # Apply classification results
         if classification:
             profile["sic_code"] = classification.get("sic_code", "")
             profile["sic_text"] = classification.get("sic_description", "")
             # Update industry/sector/sub_industry if they were missing or generic
-            if not profile.get("industry") or profile.get("industry") in ["Unknown", "Technology", "Tech"]:
+            if not profile.get("industry") or profile.get("industry") in ["Unknown", "Technology", "Tech", "Online & Digital Services"]:
                 profile["industry"] = classification.get("industry", profile.get("industry", "Information Technology"))
             if not profile.get("sector"):
                 profile["sector"] = classification.get("sector", "Information Technology")
-            if not profile.get("sub_industry") or profile.get("sub_industry") in ["Unknown", "Digital Services"]:
+            if not profile.get("sub_industry") or profile.get("sub_industry") in ["Unknown", "Digital Services", "Website"]:
                 profile["sub_industry"] = classification.get("sub_industry", profile.get("sub_industry", "Software Development & Services"))
         
         # Ensure all required fields have values

@@ -1,110 +1,119 @@
 {
-  "profile": {
-    "domain": "amazon.com",
-    "company_name": "Amazon",
-    "tech_stack": [
-      "React",
-      "Boomerang",
-      "Google Analytics"
-    ],
-    "sic_code": "62020",
-    "sic_text": "Information technology consultancy activities",
-    "industry": "Technology",
-    "short_description": "A leading Technology company operating at amazon.com.",
-    "long_description": "Amazon is a key player in the Technology sector, offering specialized digital services.",
-    "sector": "Information Technology",
-    "sub_industry": "Digital Services",
-    "tags": "Technology, technology, business, services"
-  },
-  "graph": {
-    "nodes": [
-      {
-        "id": "amazon.com",
-        "label": "Amazon",
-        "group": "Company"
-      },
-      {
-        "id": "Technology",
-        "label": "Technology",
-        "group": "Industry"
-      },
-      {
-        "id": "Technology",
-        "label": "Technology",
-        "group": "Tag"
-      },
-      {
-        "id": "technology",
-        "label": "technology",
-        "group": "Tag"
-      },
-      {
-        "id": "business",
-        "label": "business",
-        "group": "Tag"
-      },
-      {
-        "id": "services",
-        "label": "services",
-        "group": "Tag"
-      },
-      {
-        "id": "React",
-        "label": "React",
-        "group": "Technology"
-      },
-      {
-        "id": "Boomerang",
-        "label": "Boomerang",
-        "group": "Technology"
-      },
-      {
-        "id": "Google Analytics",
-        "label": "Google Analytics",
-        "group": "Technology"
-      }
-    ],
-    "edges": [
-      {
-        "source": "amazon.com",
-        "target": "Technology",
-        "label": "OPERATES_IN"
-      },
-      {
-        "source": "amazon.com",
-        "target": "Technology",
-        "label": "TAGGED_AS"
-      },
-      {
-        "source": "amazon.com",
-        "target": "technology",
-        "label": "TAGGED_AS"
-      },
-      {
-        "source": "amazon.com",
-        "target": "business",
-        "label": "TAGGED_AS"
-      },
-      {
-        "source": "amazon.com",
-        "target": "services",
-        "label": "TAGGED_AS"
-      },
-      {
-        "source": "amazon.com",
-        "target": "React",
-        "label": "USES_TECH"
-      },
-      {
-        "source": "amazon.com",
-        "target": "Boomerang",
-        "label": "USES_TECH"
-      },
-      {
-        "source": "amazon.com",
-        "target": "Google Analytics",
-        "label": "USES_TECH"
-      }
-    ]
-  }
+    "profile": {
+        "domain": "amazon.com",
+        "company_name": "Amazon",
+        "tech_stack": [
+            "Google Analytics",
+            "Boomerang",
+            "React"
+        ],
+        "sic_code": "63120",
+        "sic_text": "Web portals",
+        "industry": "Online & Digital Services",
+        "sector": "Information Technology",
+        "sub_industry": "Website",
+        "short_description": "A leading Online & Digital Services company.",
+        "long_description": "Amazon is a key player in the Online & Digital Services sector, offering specialized services.",
+        "tags": "online & digital services, technology, business, services",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_amazon.com",
+                "label": "Amazon",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Online & Digital Services",
+                "label": "Online & Digital Services",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_online & digital services",
+                "label": "online & digital services",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_technology",
+                "label": "technology",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_business",
+                "label": "business",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_services",
+                "label": "services",
+                "group": "Tag"
+            },
+            {
+                "id": "tech_Google Analytics",
+                "label": "Google Analytics",
+                "group": "Technology"
+            },
+            {
+                "id": "tech_Boomerang",
+                "label": "Boomerang",
+                "group": "Technology"
+            },
+            {
+                "id": "tech_React",
+                "label": "React",
+                "group": "Technology"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_amazon.com",
+                "target": "industry_Online & Digital Services",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_amazon.com",
+                "target": "tag_online & digital services",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_amazon.com",
+                "target": "tag_technology",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_amazon.com",
+                "target": "tag_business",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_amazon.com",
+                "target": "tag_services",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_amazon.com",
+                "target": "tech_Google Analytics",
+                "label": "USES_TECH"
+            },
+            {
+                "source": "company_amazon.com",
+                "target": "tech_Boomerang",
+                "label": "USES_TECH"
+            },
+            {
+                "source": "company_amazon.com",
+                "target": "tech_React",
+                "label": "USES_TECH"
+            }
+        ]
+    }
 }

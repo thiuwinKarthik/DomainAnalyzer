@@ -1,5 +1,6 @@
 import os
 import csv
+import re
 from typing import Dict, List, Optional, Tuple
 
 class ClassificationService:
@@ -16,69 +17,113 @@ class ClassificationService:
     def _load_classifications(self):
         """Load sub-industry classification data from CSV"""
         if not os.path.exists(self.classification_file):
-            print(f"⚠️  Classification file not found: {self.classification_file}")
+            print(f"[WARN] Classification file not found: {self.classification_file}")
             return
         
         try:
-            with open(self.classification_file, 'r', encoding='utf-8') as f:
+            with open(self.classification_file, 'r', encoding='utf-8-sig') as f:
                 reader = csv.DictReader(f)
                 self.classifications = list(reader)
-            print(f"✅ Loaded {len(self.classifications)} classification entries")
+            print(f"[INFO] Loaded {len(self.classifications)} classification entries")
         except Exception as e:
-            print(f"❌ Error loading classifications: {e}")
+            print(f"[ERROR] Error loading classifications: {e}")
     
+    def _tokenize(self, text: str) -> set:
+        """Helper to convert text into a set of lowercase keywords"""
+        if not text:
+            return set()
+        # Keep only alphanumeric chars
+        text = re.sub(r'[^a-zA-Z0-9\s]', '', text.lower())
+        tokens = set(text.split())
+        # Remove common stop words (very basic list)
+        stop_words = {'and', 'or', 'the', 'a', 'an', 'of', 'in', 'for', 'services', 'service', 'limited', 'ltd', 'inc', 'co', 'company'}
+        return tokens - stop_words
+
     def find_best_match(self, company_text: str, industry: str = "", sub_industry: str = "") -> Optional[Dict]:
         """
-        Find the best matching sub-industry classification based on company text and extracted industry
-        
-        Args:
-            company_text: Combined text from company website (description, tags, etc.)
-            industry: Extracted industry from LLM
-            sub_industry: Extracted sub-industry from LLM
-            
-        Returns:
-            Dictionary with classification details or None
+        Find the best matching sub-industry classification based on company text and extracted industry.
+        Uses a scored matching approach.
         """
         if not self.classifications:
             return self._get_default_classification()
         
-        # Normalize inputs
-        search_text = (company_text + " " + industry + " " + sub_industry).lower()
+        # Prepare input tokens
+        # We weigh the explicit 'sub_industry' and 'industry' args higher if provided
+        input_sub_tokens = self._tokenize(sub_industry)
+        input_ind_tokens = self._tokenize(industry)
+        input_text_tokens = self._tokenize(company_text)
         
-        # Score each classification
+        # Combine all for a broad search
+        all_input_tokens = input_sub_tokens | input_ind_tokens | input_text_tokens
+        
         best_match = None
-        best_score = 0
+        best_score = 0.0
         
-        for classification in self.classifications:
-            score = 0
-            sub_ind = classification.get('sub_industry', '').lower()
-            ind = classification.get('Industry', '').lower()
-            sic_desc = classification.get('sic_description', '').lower()
+        # Debug: track candidates for visibility
+        candidates = []
+
+        for row in self.classifications:
+            score = 0.0
             
-            # Check for exact matches first
-            if sub_industry and sub_ind and sub_industry.lower() in sub_ind:
+            # Extract row fields
+            row_sub = row.get('sub_industry', '')
+            row_ind = row.get('Industry', '')
+            row_sector = row.get('sector', '')
+            row_sic_desc = row.get('sic_description', '')
+            row_text = f"{row_sub} {row_ind} {row_sector} {row_sic_desc}"
+            
+            row_sub_tokens = self._tokenize(row_sub)
+            row_ind_tokens = self._tokenize(row_ind)
+            row_tokens = self._tokenize(row_text)
+            
+            # --- SCORING LOGIC ---
+            
+            # 1. Sub-Industry Match (Highest Priority)
+            # If the user specifically identified a sub-industry, we want to match that closely.
+            if input_sub_tokens and row_sub_tokens:
+                intersection = input_sub_tokens & row_sub_tokens
+                if intersection:
+                    # Score based on fraction of tokens matched
+                    term_match_score = len(intersection) / len(input_sub_tokens)
+                    score += term_match_score * 15  # High weight
+
+            # 2. Industry Match
+            if input_ind_tokens and row_ind_tokens:
+                intersection = input_ind_tokens & row_ind_tokens
+                if intersection:
+                    term_match_score = len(intersection) / len(input_ind_tokens)
+                    score += term_match_score * 10
+
+            # 3. Broad Keyword Match (Context)
+            # Check how many input keywords appear in this row
+            if all_input_tokens and row_tokens:
+                intersection = all_input_tokens & row_tokens
+                # Base score is number of matches
+                score += len(intersection) * 1.5
+            
+            # 4. Exact Phrase Bonuses (Case insensitive)
+            search_str = (company_text + " " + industry + " " + sub_industry).lower()
+            if row_sub.lower() in search_str and len(row_sub) > 4:
+                score += 20  # Massive bonus for exact sub-industry phrase match
+            if row_sic_desc.lower() in search_str and len(row_sic_desc) > 4:
                 score += 10
-            if industry and ind and industry.lower() in ind:
-                score += 8
-            
-            # Check for keyword matches in search text
-            keywords = sub_ind.split()
-            for keyword in keywords:
-                if len(keyword) > 3 and keyword in search_text:
-                    score += 2
-            
-            # Check SIC description keywords
-            sic_keywords = sic_desc.split()
-            for keyword in sic_keywords:
-                if len(keyword) > 4 and keyword in search_text:
-                    score += 1
-            
+
+            if score > 0:
+                candidates.append((score, row))
+
             if score > best_score:
                 best_score = score
-                best_match = classification
+                best_match = row
         
-        # If we found a good match, return it
-        if best_match and best_score >= 3:
+        # Sort candidates for debug (optional, can remove in prod)
+        # candidates.sort(key=lambda x: x[0], reverse=True)
+        # if candidates:
+        #      print(f"[DEBUG] Top match for '{sub_industry} | {industry}': {candidates[0][1]['sub_industry']} (Score: {candidates[0][0]})")
+
+        # Threshold: 
+        # Previously it was 3. Now we allow lower if we have no better options, 
+        # but let's say at least some meaningful match happened (score >= 2).
+        if best_match and best_score >= 2:
             return {
                 'sub_industry': best_match.get('sub_industry', ''),
                 'industry': best_match.get('Industry', ''),
@@ -87,19 +132,21 @@ class ClassificationService:
                 'sic_description': best_match.get('sic_description', '')
             }
         
-        # Fallback: try to match by industry only
+        # Fallback: If we extracted a specific industry but failed to match a sub-industry,
+        # try to find ANY entry in that industry to at least get the Sector right.
         if industry:
-            for classification in self.classifications:
-                if industry.lower() in classification.get('Industry', '').lower():
+            for row in self.classifications:
+                if industry.lower() in row.get('Industry', '').lower():
                     return {
-                        'sub_industry': classification.get('sub_industry', ''),
-                        'industry': classification.get('Industry', ''),
-                        'sector': classification.get('sector', ''),
-                        'sic_code': classification.get('sic_code', ''),
-                        'sic_description': classification.get('sic_description', '')
+                        'sub_industry': row.get('sub_industry', ''),
+                        'industry': row.get('Industry', ''),
+                        'sector': row.get('sector', ''),
+                        'sic_code': row.get('sic_code', ''),
+                        'sic_description': row.get('sic_description', '')
                     }
         
         # Default fallback
+        print(f"[INFO] No good match found for '{sub_industry}' / '{industry}'. Using default.")
         return self._get_default_classification()
     
     def _get_default_classification(self) -> Dict:

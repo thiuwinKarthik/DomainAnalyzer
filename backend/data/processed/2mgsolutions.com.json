@@ -1,18 +1,18 @@
 {
     "profile": {
-        "domain": "coauthor.app",
-        "company_name": "Coauthor",
+        "domain": "2mgsolutions.com",
+        "company_name": "2mgsolutions",
         "tech_stack": [
             "React"
         ],
-        "sic_code": "62012",
-        "sic_text": "Business and domestic software development",
-        "industry": "Information Technology",
+        "sic_code": "63120",
+        "sic_text": "Web portals",
+        "industry": "Online & Digital Services",
         "sector": "Information Technology",
-        "sub_industry": "Software Development & Services",
-        "short_description": "A leading Information Technology company.",
-        "long_description": "Coauthor is a key player in the Information Technology sector, offering specialized services.",
-        "tags": "information technology, technology, business, services",
+        "sub_industry": "Website",
+        "short_description": "A leading Online & Digital Services company.",
+        "long_description": "2mgsolutions is a key player in the Online & Digital Services sector, offering specialized services.",
+        "tags": "online & digital services, technology, business, services",
         "text": "",
         "full_address": "",
         "phone": "",
@@ -26,18 +26,18 @@
     "graph": {
         "nodes": [
             {
-                "id": "company_coauthor.app",
-                "label": "Coauthor",
+                "id": "company_2mgsolutions.com",
+                "label": "2mgsolutions",
                 "group": "Company"
             },
             {
-                "id": "industry_Information Technology",
-                "label": "Information Technology",
+                "id": "industry_Online & Digital Services",
+                "label": "Online & Digital Services",
                 "group": "Industry"
             },
             {
-                "id": "tag_information technology",
-                "label": "information technology",
+                "id": "tag_online & digital services",
+                "label": "online & digital services",
                 "group": "Tag"
             },
             {
@@ -63,32 +63,32 @@
         ],
         "edges": [
             {
-                "source": "company_coauthor.app",
-                "target": "industry_Information Technology",
+                "source": "company_2mgsolutions.com",
+                "target": "industry_Online & Digital Services",
                 "label": "OPERATES_IN"
             },
             {
-                "source": "company_coauthor.app",
-                "target": "tag_information technology",
+                "source": "company_2mgsolutions.com",
+                "target": "tag_online & digital services",
                 "label": "TAGGED_AS"
             },
             {
-                "source": "company_coauthor.app",
+                "source": "company_2mgsolutions.com",
                 "target": "tag_technology",
                 "label": "TAGGED_AS"
             },
             {
-                "source": "company_coauthor.app",
+                "source": "company_2mgsolutions.com",
                 "target": "tag_business",
                 "label": "TAGGED_AS"
             },
             {
-                "source": "company_coauthor.app",
+                "source": "company_2mgsolutions.com",
                 "target": "tag_services",
                 "label": "TAGGED_AS"
             },
             {
-                "source": "company_coauthor.app",
+                "source": "company_2mgsolutions.com",
                 "target": "tech_React",
                 "label": "USES_TECH"
             }

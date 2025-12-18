@@ -1,110 +1,119 @@
 {
-  "profile": {
-    "domain": "netflix.com",
-    "company_name": "Netflix",
-    "tech_stack": [
-      "OneTrust",
-      "React",
-      "Google Analytics"
-    ],
-    "sic_code": "59111",
-    "sic_text": "Motion picture production activities",
-    "industry": "Movie",
-    "short_description": "A leading Movie company operating at netflix.com.",
-    "long_description": "Netflix is a key player in the Movie sector, offering specialized digital services.",
-    "sector": "Information Technology",
-    "sub_industry": "Digital Services",
-    "tags": "Movie, technology, business, services"
-  },
-  "graph": {
-    "nodes": [
-      {
-        "id": "netflix.com",
-        "label": "Netflix",
-        "group": "Company"
-      },
-      {
-        "id": "Movie",
-        "label": "Movie",
-        "group": "Industry"
-      },
-      {
-        "id": "Movie",
-        "label": "Movie",
-        "group": "Tag"
-      },
-      {
-        "id": "technology",
-        "label": "technology",
-        "group": "Tag"
-      },
-      {
-        "id": "business",
-        "label": "business",
-        "group": "Tag"
-      },
-      {
-        "id": "services",
-        "label": "services",
-        "group": "Tag"
-      },
-      {
-        "id": "OneTrust",
-        "label": "OneTrust",
-        "group": "Technology"
-      },
-      {
-        "id": "React",
-        "label": "React",
-        "group": "Technology"
-      },
-      {
-        "id": "Google Analytics",
-        "label": "Google Analytics",
-        "group": "Technology"
-      }
-    ],
-    "edges": [
-      {
-        "source": "netflix.com",
-        "target": "Movie",
-        "label": "OPERATES_IN"
-      },
-      {
-        "source": "netflix.com",
-        "target": "Movie",
-        "label": "TAGGED_AS"
-      },
-      {
-        "source": "netflix.com",
-        "target": "technology",
-        "label": "TAGGED_AS"
-      },
-      {
-        "source": "netflix.com",
-        "target": "business",
-        "label": "TAGGED_AS"
-      },
-      {
-        "source": "netflix.com",
-        "target": "services",
-        "label": "TAGGED_AS"
-      },
-      {
-        "source": "netflix.com",
-        "target": "OneTrust",
-        "label": "USES_TECH"
-      },
-      {
-        "source": "netflix.com",
-        "target": "React",
-        "label": "USES_TECH"
-      },
-      {
-        "source": "netflix.com",
-        "target": "Google Analytics",
-        "label": "USES_TECH"
-      }
-    ]
-  }
+    "profile": {
+        "domain": "netflix.com",
+        "company_name": "Netflix",
+        "tech_stack": [
+            "Google Analytics",
+            "OneTrust",
+            "React"
+        ],
+        "sic_code": "59111",
+        "sic_text": "Motion picture production activities",
+        "industry": "Media Production & Services",
+        "sector": "Media, Publishing & Entertainment",
+        "sub_industry": "Animation",
+        "short_description": "A leading Media Production & Services company.",
+        "long_description": "Netflix is a key player in the Media Production & Services sector, offering specialized services.",
+        "tags": "media production & services, technology, business, services",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_netflix.com",
+                "label": "Netflix",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Media Production & Services",
+                "label": "Media Production & Services",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_media production & services",
+                "label": "media production & services",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_technology",
+                "label": "technology",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_business",
+                "label": "business",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_services",
+                "label": "services",
+                "group": "Tag"
+            },
+            {
+                "id": "tech_Google Analytics",
+                "label": "Google Analytics",
+                "group": "Technology"
+            },
+            {
+                "id": "tech_OneTrust",
+                "label": "OneTrust",
+                "group": "Technology"
+            },
+            {
+                "id": "tech_React",
+                "label": "React",
+                "group": "Technology"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_netflix.com",
+                "target": "industry_Media Production & Services",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_netflix.com",
+                "target": "tag_media production & services",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_netflix.com",
+                "target": "tag_technology",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_netflix.com",
+                "target": "tag_business",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_netflix.com",
+                "target": "tag_services",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_netflix.com",
+                "target": "tech_Google Analytics",
+                "label": "USES_TECH"
+            },
+            {
+                "source": "company_netflix.com",
+                "target": "tech_OneTrust",
+                "label": "USES_TECH"
+            },
+            {
+                "source": "company_netflix.com",
+                "target": "tech_React",
+                "label": "USES_TECH"
+            }
+        ]
+    }
 }

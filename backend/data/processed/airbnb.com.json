@@ -1,99 +1,108 @@
 {
-  "profile": {
-    "domain": "airbnb.com",
-    "company_name": "Airbnb",
-    "tech_stack": [
-      "Google Tag Manager",
-      "Google Analytics"
-    ],
-    "sic_code": "79110",
-    "sic_text": "Travel agency activities",
-    "industry": "Travel",
-    "short_description": "A leading Travel company operating at airbnb.com.",
-    "long_description": "Airbnb is a key player in the Travel sector, offering specialized digital services.",
-    "sector": "Information Technology",
-    "sub_industry": "Digital Services",
-    "tags": "Travel, technology, business, services"
-  },
-  "graph": {
-    "nodes": [
-      {
-        "id": "airbnb.com",
-        "label": "Airbnb",
-        "group": "Company"
-      },
-      {
-        "id": "Travel",
-        "label": "Travel",
-        "group": "Industry"
-      },
-      {
-        "id": "Travel",
-        "label": "Travel",
-        "group": "Tag"
-      },
-      {
-        "id": "technology",
-        "label": "technology",
-        "group": "Tag"
-      },
-      {
-        "id": "business",
-        "label": "business",
-        "group": "Tag"
-      },
-      {
-        "id": "services",
-        "label": "services",
-        "group": "Tag"
-      },
-      {
-        "id": "Google Tag Manager",
-        "label": "Google Tag Manager",
-        "group": "Technology"
-      },
-      {
-        "id": "Google Analytics",
-        "label": "Google Analytics",
-        "group": "Technology"
-      }
-    ],
-    "edges": [
-      {
-        "source": "airbnb.com",
-        "target": "Travel",
-        "label": "OPERATES_IN"
-      },
-      {
-        "source": "airbnb.com",
-        "target": "Travel",
-        "label": "TAGGED_AS"
-      },
-      {
-        "source": "airbnb.com",
-        "target": "technology",
-        "label": "TAGGED_AS"
-      },
-      {
-        "source": "airbnb.com",
-        "target": "business",
-        "label": "TAGGED_AS"
-      },
-      {
-        "source": "airbnb.com",
-        "target": "services",
-        "label": "TAGGED_AS"
-      },
-      {
-        "source": "airbnb.com",
-        "target": "Google Tag Manager",
-        "label": "USES_TECH"
-      },
-      {
-        "source": "airbnb.com",
-        "target": "Google Analytics",
-        "label": "USES_TECH"
-      }
-    ]
-  }
+    "profile": {
+        "domain": "airbnb.com",
+        "company_name": "Airbnb",
+        "tech_stack": [
+            "Google Analytics",
+            "Google Tag Manager"
+        ],
+        "sic_code": "63120",
+        "sic_text": "Web portals",
+        "industry": "Online & Digital Services",
+        "sector": "Information Technology",
+        "sub_industry": "Website",
+        "short_description": "A leading Online & Digital Services company.",
+        "long_description": "Airbnb is a key player in the Online & Digital Services sector, offering specialized services.",
+        "tags": "online & digital services, technology, business, services",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_airbnb.com",
+                "label": "Airbnb",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Online & Digital Services",
+                "label": "Online & Digital Services",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_online & digital services",
+                "label": "online & digital services",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_technology",
+                "label": "technology",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_business",
+                "label": "business",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_services",
+                "label": "services",
+                "group": "Tag"
+            },
+            {
+                "id": "tech_Google Analytics",
+                "label": "Google Analytics",
+                "group": "Technology"
+            },
+            {
+                "id": "tech_Google Tag Manager",
+                "label": "Google Tag Manager",
+                "group": "Technology"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_airbnb.com",
+                "target": "industry_Online & Digital Services",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_airbnb.com",
+                "target": "tag_online & digital services",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_airbnb.com",
+                "target": "tag_technology",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_airbnb.com",
+                "target": "tag_business",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_airbnb.com",
+                "target": "tag_services",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_airbnb.com",
+                "target": "tech_Google Analytics",
+                "label": "USES_TECH"
+            },
+            {
+                "source": "company_airbnb.com",
+                "target": "tech_Google Tag Manager",
+                "label": "USES_TECH"
+            }
+        ]
+    }
 }

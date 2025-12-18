@@ -8,12 +8,12 @@
         ],
         "sic_code": "62012",
         "sic_text": "Business and domestic software development",
-        "industry": "Information Technology",
+        "industry": "Software Development & Services",
         "sector": "Information Technology",
-        "sub_industry": "Software Development & Services",
-        "short_description": "A leading Information Technology company.",
-        "long_description": "Infynd is a key player in the Information Technology sector, offering specialized services.",
-        "tags": "information technology, technology, business, services",
+        "sub_industry": "Accounting Software",
+        "short_description": "A leading Software Development & Services company.",
+        "long_description": "Infynd is a key player in the Software Development & Services sector, offering specialized services.",
+        "tags": "software development & services, technology, business, services",
         "text": "",
         "full_address": "",
         "phone": "",
@@ -32,13 +32,13 @@
                 "group": "Company"
             },
             {
-                "id": "industry_Information Technology",
-                "label": "Information Technology",
+                "id": "industry_Software Development & Services",
+                "label": "Software Development & Services",
                 "group": "Industry"
             },
             {
-                "id": "tag_information technology",
-                "label": "information technology",
+                "id": "tag_software development & services",
+                "label": "software development & services",
                 "group": "Tag"
             },
             {
@@ -70,12 +70,12 @@
         "edges": [
             {
                 "source": "company_infynd.com",
-                "target": "industry_Information Technology",
+                "target": "industry_Software Development & Services",
                 "label": "OPERATES_IN"
             },
             {
                 "source": "company_infynd.com",
-                "target": "tag_information technology",
+                "target": "tag_software development & services",
                 "label": "TAGGED_AS"
             },
             {

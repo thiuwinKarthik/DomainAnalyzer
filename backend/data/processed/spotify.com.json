@@ -1,110 +1,119 @@
 {
-  "profile": {
-    "domain": "spotify.com",
-    "company_name": "Spotify",
-    "tech_stack": [
-      "OneTrust",
-      "Google Tag Manager",
-      "Google Analytics"
-    ],
-    "sic_code": "66120",
-    "sic_text": "Security and commodity contracts brokerage",
-    "industry": "Stock",
-    "short_description": "A leading Stock company operating at spotify.com.",
-    "long_description": "Spotify is a key player in the Stock sector, offering specialized digital services.",
-    "sector": "Information Technology",
-    "sub_industry": "Digital Services",
-    "tags": "Stock, technology, business, services"
-  },
-  "graph": {
-    "nodes": [
-      {
-        "id": "spotify.com",
-        "label": "Spotify",
-        "group": "Company"
-      },
-      {
-        "id": "Stock",
-        "label": "Stock",
-        "group": "Industry"
-      },
-      {
-        "id": "Stock",
-        "label": "Stock",
-        "group": "Tag"
-      },
-      {
-        "id": "technology",
-        "label": "technology",
-        "group": "Tag"
-      },
-      {
-        "id": "business",
-        "label": "business",
-        "group": "Tag"
-      },
-      {
-        "id": "services",
-        "label": "services",
-        "group": "Tag"
-      },
-      {
-        "id": "OneTrust",
-        "label": "OneTrust",
-        "group": "Technology"
-      },
-      {
-        "id": "Google Tag Manager",
-        "label": "Google Tag Manager",
-        "group": "Technology"
-      },
-      {
-        "id": "Google Analytics",
-        "label": "Google Analytics",
-        "group": "Technology"
-      }
-    ],
-    "edges": [
-      {
-        "source": "spotify.com",
-        "target": "Stock",
-        "label": "OPERATES_IN"
-      },
-      {
-        "source": "spotify.com",
-        "target": "Stock",
-        "label": "TAGGED_AS"
-      },
-      {
-        "source": "spotify.com",
-        "target": "technology",
-        "label": "TAGGED_AS"
-      },
-      {
-        "source": "spotify.com",
-        "target": "business",
-        "label": "TAGGED_AS"
-      },
-      {
-        "source": "spotify.com",
-        "target": "services",
-        "label": "TAGGED_AS"
-      },
-      {
-        "source": "spotify.com",
-        "target": "OneTrust",
-        "label": "USES_TECH"
-      },
-      {
-        "source": "spotify.com",
-        "target": "Google Tag Manager",
-        "label": "USES_TECH"
-      },
-      {
-        "source": "spotify.com",
-        "target": "Google Analytics",
-        "label": "USES_TECH"
-      }
-    ]
-  }
+    "profile": {
+        "domain": "spotify.com",
+        "company_name": "Spotify",
+        "tech_stack": [
+            "Google Tag Manager",
+            "Google Analytics",
+            "OneTrust"
+        ],
+        "sic_code": "59200",
+        "sic_text": "Sound recording and music publishing activities",
+        "industry": "Books & Media",
+        "sector": "Media, Publishing & Entertainment",
+        "sub_industry": "CDs, DVDs, Vinyl & Tapes",
+        "short_description": "A leading Books & Media company.",
+        "long_description": "Spotify is a key player in the Books & Media sector, offering specialized services.",
+        "tags": "books & media, technology, business, services",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_spotify.com",
+                "label": "Spotify",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Books & Media",
+                "label": "Books & Media",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_books & media",
+                "label": "books & media",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_technology",
+                "label": "technology",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_business",
+                "label": "business",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_services",
+                "label": "services",
+                "group": "Tag"
+            },
+            {
+                "id": "tech_Google Tag Manager",
+                "label": "Google Tag Manager",
+                "group": "Technology"
+            },
+            {
+                "id": "tech_Google Analytics",
+                "label": "Google Analytics",
+                "group": "Technology"
+            },
+            {
+                "id": "tech_OneTrust",
+                "label": "OneTrust",
+                "group": "Technology"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_spotify.com",
+                "target": "industry_Books & Media",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_spotify.com",
+                "target": "tag_books & media",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_spotify.com",
+                "target": "tag_technology",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_spotify.com",
+                "target": "tag_business",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_spotify.com",
+                "target": "tag_services",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_spotify.com",
+                "target": "tech_Google Tag Manager",
+                "label": "USES_TECH"
+            },
+            {
+                "source": "company_spotify.com",
+                "target": "tech_Google Analytics",
+                "label": "USES_TECH"
+            },
+            {
+                "source": "company_spotify.com",
+                "target": "tech_OneTrust",
+                "label": "USES_TECH"
+            }
+        ]
+    }
 }

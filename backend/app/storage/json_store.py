@@ -6,6 +6,7 @@ class JSONStore:
     @staticmethod
     def save(domain: str, data: dict):
         path = os.path.join(PROCESSED_DIR, f"{domain}.json")
+        os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=4)
 
