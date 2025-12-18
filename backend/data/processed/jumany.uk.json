@@ -1,0 +1,108 @@
+{
+    "profile": {
+        "domain": "jumany.uk",
+        "company_name": "Jumany",
+        "tech_stack": [
+            "Google Analytics",
+            "Google Tag Manager"
+        ],
+        "sic_code": "63120",
+        "sic_text": "Web portals",
+        "industry": "Online & Digital Services",
+        "sector": "Information Technology",
+        "sub_industry": "Website",
+        "short_description": "A leading Online & Digital Services company.",
+        "long_description": "Jumany is a key player in the Online & Digital Services sector, offering specialized services.",
+        "tags": "online & digital services, technology, business, services",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_jumany.uk",
+                "label": "Jumany",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Online & Digital Services",
+                "label": "Online & Digital Services",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_online & digital services",
+                "label": "online & digital services",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_technology",
+                "label": "technology",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_business",
+                "label": "business",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_services",
+                "label": "services",
+                "group": "Tag"
+            },
+            {
+                "id": "tech_Google Analytics",
+                "label": "Google Analytics",
+                "group": "Technology"
+            },
+            {
+                "id": "tech_Google Tag Manager",
+                "label": "Google Tag Manager",
+                "group": "Technology"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_jumany.uk",
+                "target": "industry_Online & Digital Services",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_jumany.uk",
+                "target": "tag_online & digital services",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_jumany.uk",
+                "target": "tag_technology",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_jumany.uk",
+                "target": "tag_business",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_jumany.uk",
+                "target": "tag_services",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_jumany.uk",
+                "target": "tech_Google Analytics",
+                "label": "USES_TECH"
+            },
+            {
+                "source": "company_jumany.uk",
+                "target": "tech_Google Tag Manager",
+                "label": "USES_TECH"
+            }
+        ]
+    }
+}
