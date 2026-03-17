@@ -1,0 +1,99 @@
+{
+    "profile": {
+        "company_name": "Adas-ltd.",
+        "short_description": "A leading provider of advanced data analytics solutions for businesses",
+        "long_description": "Adas-ltd. is a company that specializes in providing cutting-edge data analysis and visualization tools to help organizations make informed decisions based on their data. With over 10 years of experience, Adas-ltd. has worked with clients across various industries including finance, healthcare, retail, and manufacturing.",
+        "industry": "Information Technology",
+        "sub_industry": "Data Analytics & Visualization",
+        "sector": "Technology Services",
+        "products_services": [
+            "data analytics software",
+            "custom data visualizations"
+        ],
+        "tags": "big data, business intelligence, data science, predictive analytics, machine learning",
+        "domain": "adas-ltd.com",
+        "tech_stack": [],
+        "sic_code": "47910",
+        "sic_text": "Retail sale via mail order houses or via Internet",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_adas-ltd.com",
+                "label": "Adas-ltd.",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Information Technology",
+                "label": "Information Technology",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_big data",
+                "label": "big data",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_business intelligence",
+                "label": "business intelligence",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_data science",
+                "label": "data science",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_predictive analytics",
+                "label": "predictive analytics",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_machine learning",
+                "label": "machine learning",
+                "group": "Tag"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_adas-ltd.com",
+                "target": "industry_Information Technology",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_adas-ltd.com",
+                "target": "tag_big data",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_adas-ltd.com",
+                "target": "tag_business intelligence",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_adas-ltd.com",
+                "target": "tag_data science",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_adas-ltd.com",
+                "target": "tag_predictive analytics",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_adas-ltd.com",
+                "target": "tag_machine learning",
+                "label": "TAGGED_AS"
+            }
+        ]
+    }
+}

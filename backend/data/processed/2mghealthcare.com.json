@@ -1,0 +1,101 @@
+{
+    "profile": {
+        "company_name": "2mghealthcare.com",
+        "short_description": "A health-focused online platform providing medical information and services.",
+        "long_description": "2mghealthcare is a comprehensive digital resource for individuals seeking reliable, up-to-date health information and guidance on various wellness topics. The company offers an array of resources including articles, videos, webinars, and personalized consultations with certified professionals to empower users in making informed decisions about their health.",
+        "industry": "Healthcare",
+        "sub_industry": "Digital Health Information Provider",
+        "sector": "Technology & Services",
+        "products_services": [
+            "online articles",
+            "video content",
+            "webinars",
+            "personalized consultations"
+        ],
+        "tags": "health, wellness, medical information, digital health resources, online education",
+        "domain": "2mghealthcare.com",
+        "tech_stack": [],
+        "sic_code": "63120",
+        "sic_text": "Web portals",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_2mghealthcare.com",
+                "label": "2mghealthcare.com",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Healthcare",
+                "label": "Healthcare",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_health",
+                "label": "health",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_wellness",
+                "label": "wellness",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_medical information",
+                "label": "medical information",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_digital health resources",
+                "label": "digital health resources",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_online education",
+                "label": "online education",
+                "group": "Tag"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_2mghealthcare.com",
+                "target": "industry_Healthcare",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_2mghealthcare.com",
+                "target": "tag_health",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_2mghealthcare.com",
+                "target": "tag_wellness",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_2mghealthcare.com",
+                "target": "tag_medical information",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_2mghealthcare.com",
+                "target": "tag_digital health resources",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_2mghealthcare.com",
+                "target": "tag_online education",
+                "label": "TAGGED_AS"
+            }
+        ]
+    }
+}

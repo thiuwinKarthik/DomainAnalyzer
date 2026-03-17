@@ -1,0 +1,102 @@
+{
+    "profile": {
+        "company_name": "Excellasers",
+        "short_description": "A leading provider of IT solutions and services.",
+        "long_description": "Founded in the heartland of technology innovation, Excellasers has established itself as a premier company specializing in delivering cutting-edge software development, cloud computing, cybersecurity, data analytics, and managed IT services. With over two decades of experience, our team is dedicated to empowering businesses through the integration of advanced technology into their operations.",
+        "industry": "Information Technology",
+        "sub_industry": "Software Development & Services",
+        "sector": "Technology and Communications Equipment Manufacturing",
+        "products_services": [
+            "IT Solutions",
+            "Cloud Computing",
+            "Cybersecurity",
+            "Data Analytics",
+            "Managed IT Services"
+        ],
+        "tags": "Tech, Software Development, Cloud Computing, Cybersecurity, Data Analytics",
+        "domain": "excellasers.com",
+        "tech_stack": [],
+        "sic_code": "62012",
+        "sic_text": "Business and domestic software development",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_excellasers.com",
+                "label": "Excellasers",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Information Technology",
+                "label": "Information Technology",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_Tech",
+                "label": "Tech",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_Software Development",
+                "label": "Software Development",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_Cloud Computing",
+                "label": "Cloud Computing",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_Cybersecurity",
+                "label": "Cybersecurity",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_Data Analytics",
+                "label": "Data Analytics",
+                "group": "Tag"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_excellasers.com",
+                "target": "industry_Information Technology",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_excellasers.com",
+                "target": "tag_Tech",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_excellasers.com",
+                "target": "tag_Software Development",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_excellasers.com",
+                "target": "tag_Cloud Computing",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_excellasers.com",
+                "target": "tag_Cybersecurity",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_excellasers.com",
+                "target": "tag_Data Analytics",
+                "label": "TAGGED_AS"
+            }
+        ]
+    }
+}

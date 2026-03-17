@@ -11,8 +11,8 @@ OFFLINE_SITES_DIR = os.path.join(DATA_DIR, "offline_sites")
 PROCESSED_DIR = os.path.join(DATA_DIR, "processed")
 
 # LLM Config
-LLM_MODEL = "llama3"
-LLM_TIMEOUT = 120
+LLM_MODEL = "phi3"
+LLM_TIMEOUT = 300
 
 # Ensure directories exist
 os.makedirs(OFFLINE_SITES_DIR, exist_ok=True)

@@ -1,0 +1,99 @@
+{
+    "profile": {
+        "company_name": "Firesand.co.uk",
+        "short_description": "A boutique digital marketing agency specializing in SEO and PPC campaigns.",
+        "long_description": "Based out of London, Firesand is a full-service digital marketing firm that provides comprehensive strategies for online visibility. With expertise in Search Engine Optimization (SEO) and Pay-Per-Click (PPC) advertising, the company helps businesses increase their web traffic and sales conversions.",
+        "industry": "Digital Marketing",
+        "sub_industry": "Search Engine & Advertising Solutions",
+        "sector": "Marketing Services",
+        "products_services": [
+            "SEO services",
+            "PPC campaigns"
+        ],
+        "tags": "digital marketing, SEO, PPC, online visibility, web traffic",
+        "domain": "firesand.co.uk",
+        "tech_stack": [],
+        "sic_code": "73110",
+        "sic_text": "Advertising agencies",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_firesand.co.uk",
+                "label": "Firesand.co.uk",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Digital Marketing",
+                "label": "Digital Marketing",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_digital marketing",
+                "label": "digital marketing",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_SEO",
+                "label": "SEO",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_PPC",
+                "label": "PPC",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_online visibility",
+                "label": "online visibility",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_web traffic",
+                "label": "web traffic",
+                "group": "Tag"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_firesand.co.uk",
+                "target": "industry_Digital Marketing",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_firesand.co.uk",
+                "target": "tag_digital marketing",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_firesand.co.uk",
+                "target": "tag_SEO",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_firesand.co.uk",
+                "target": "tag_PPC",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_firesand.co.uk",
+                "target": "tag_online visibility",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_firesand.co.uk",
+                "target": "tag_web traffic",
+                "label": "TAGGED_AS"
+            }
+        ]
+    }
+}

@@ -1,19 +1,20 @@
 {
     "profile": {
-        "domain": "jumany.uk",
-        "company_name": "Jumany",
-        "tech_stack": [
-            "Google Analytics",
-            "Google Tag Manager"
+        "company_name": "Jumany UK Limited",
+        "short_description": "A leading provider of innovative software solutions for businesses.",
+        "long_description": "Founded in the heart of London, Jumany has established itself as a premier supplier of cutting-edge enterprise resource planning (ERP) and customer relationship management (CRM) systems. With over 20 years of experience, our team specializes in delivering customized software solutions that streamline business operations across various industries.",
+        "industry": "Information Technology",
+        "sub_industry": "Enterprise Software Solutions",
+        "sector": "Technology Services",
+        "products_services": [
+            "ERP Systems",
+            "CRM Platforms"
         ],
-        "sic_code": "63120",
-        "sic_text": "Web portals",
-        "industry": "Online & Digital Services",
-        "sector": "Information Technology",
-        "sub_industry": "Website",
-        "short_description": "A leading Online & Digital Services company.",
-        "long_description": "Jumany is a key player in the Online & Digital Services sector, offering specialized services.",
-        "tags": "online & digital services, technology, business, services",
+        "tags": "business software, enterprise solutions, customer relationship management, business process automation, technology services",
+        "domain": "jumany.uk",
+        "tech_stack": [],
+        "sic_code": "62012",
+        "sic_text": "Business and domestic software development",
         "text": "",
         "full_address": "",
         "phone": "",
@@ -28,80 +29,70 @@
         "nodes": [
             {
                 "id": "company_jumany.uk",
-                "label": "Jumany",
+                "label": "Jumany UK Limited",
                 "group": "Company"
             },
             {
-                "id": "industry_Online & Digital Services",
-                "label": "Online & Digital Services",
+                "id": "industry_Information Technology",
+                "label": "Information Technology",
                 "group": "Industry"
             },
             {
-                "id": "tag_online & digital services",
-                "label": "online & digital services",
+                "id": "tag_business software",
+                "label": "business software",
                 "group": "Tag"
             },
             {
-                "id": "tag_technology",
-                "label": "technology",
+                "id": "tag_enterprise solutions",
+                "label": "enterprise solutions",
                 "group": "Tag"
             },
             {
-                "id": "tag_business",
-                "label": "business",
+                "id": "tag_customer relationship management",
+                "label": "customer relationship management",
                 "group": "Tag"
             },
             {
-                "id": "tag_services",
-                "label": "services",
+                "id": "tag_business process automation",
+                "label": "business process automation",
                 "group": "Tag"
             },
             {
-                "id": "tech_Google Analytics",
-                "label": "Google Analytics",
-                "group": "Technology"
-            },
-            {
-                "id": "tech_Google Tag Manager",
-                "label": "Google Tag Manager",
-                "group": "Technology"
+                "id": "tag_technology services",
+                "label": "technology services",
+                "group": "Tag"
             }
         ],
         "edges": [
             {
                 "source": "company_jumany.uk",
-                "target": "industry_Online & Digital Services",
+                "target": "industry_Information Technology",
                 "label": "OPERATES_IN"
             },
             {
                 "source": "company_jumany.uk",
-                "target": "tag_online & digital services",
+                "target": "tag_business software",
                 "label": "TAGGED_AS"
             },
             {
                 "source": "company_jumany.uk",
-                "target": "tag_technology",
+                "target": "tag_enterprise solutions",
                 "label": "TAGGED_AS"
             },
             {
                 "source": "company_jumany.uk",
-                "target": "tag_business",
+                "target": "tag_customer relationship management",
                 "label": "TAGGED_AS"
             },
             {
                 "source": "company_jumany.uk",
-                "target": "tag_services",
+                "target": "tag_business process automation",
                 "label": "TAGGED_AS"
             },
             {
                 "source": "company_jumany.uk",
-                "target": "tech_Google Analytics",
-                "label": "USES_TECH"
-            },
-            {
-                "source": "company_jumany.uk",
-                "target": "tech_Google Tag Manager",
-                "label": "USES_TECH"
+                "target": "tag_technology services",
+                "label": "TAGGED_AS"
             }
         ]
     }

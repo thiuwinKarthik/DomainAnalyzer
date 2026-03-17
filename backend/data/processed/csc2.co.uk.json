@@ -1,0 +1,99 @@
+{
+    "profile": {
+        "company_name": "Csc2",
+        "short_description": "A leading IT consultancy providing bespoke software solutions.",
+        "long_description": "Founded in the heart of London, Csc2 has established itself as a premier provider of customized information technology services. With over two decades of experience and an unwavering commitment to excellence, our team delivers innovative IT consultancy that helps businesses thrive in today's digital world.",
+        "industry": "Information Technology",
+        "sub_industry": "IT Consultancy & Software Development Services",
+        "sector": "Technology and Communications",
+        "products_services": [
+            "Consulting services",
+            "Custom software development"
+        ],
+        "tags": "IT consultancy, bespoke solutions, custom software, digital transformation, business process optimization",
+        "domain": "csc2.co.uk",
+        "tech_stack": [],
+        "sic_code": "62012",
+        "sic_text": "Business and domestic software development",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_csc2.co.uk",
+                "label": "Csc2",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Information Technology",
+                "label": "Information Technology",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_IT consultancy",
+                "label": "IT consultancy",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_bespoke solutions",
+                "label": "bespoke solutions",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_custom software",
+                "label": "custom software",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_digital transformation",
+                "label": "digital transformation",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_business process optimization",
+                "label": "business process optimization",
+                "group": "Tag"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_csc2.co.uk",
+                "target": "industry_Information Technology",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_csc2.co.uk",
+                "target": "tag_IT consultancy",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_csc2.co.uk",
+                "target": "tag_bespoke solutions",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_csc2.co.uk",
+                "target": "tag_custom software",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_csc2.co.uk",
+                "target": "tag_digital transformation",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_csc2.co.uk",
+                "target": "tag_business process optimization",
+                "label": "TAGGED_AS"
+            }
+        ]
+    }
+}

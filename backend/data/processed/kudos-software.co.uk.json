@@ -1,0 +1,99 @@
+{
+    "profile": {
+        "company_name": "Kudos-software Co.",
+        "short_description": "A software development company specializing in user experience and interface design",
+        "long_description": "Based in the UK, Kudos-software is a boutique firm dedicated to creating intuitive digital experiences. With expertise spanning across various platforms including web applications, mobile apps, and interactive kiosks, they aim to enhance customer engagement through innovative design solutions.",
+        "industry": "Information Technology",
+        "sub_industry": "Software Development & Services",
+        "sector": "Technology",
+        "products_services": [
+            "User Experience Design",
+            "Interface Engineering"
+        ],
+        "tags": "user experience, software development, design thinking, mobile app development, interactive kiosks",
+        "domain": "kudos-software.co.uk",
+        "tech_stack": [],
+        "sic_code": "62012",
+        "sic_text": "Business and domestic software development",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_kudos-software.co.uk",
+                "label": "Kudos-software Co.",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Information Technology",
+                "label": "Information Technology",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_user experience",
+                "label": "user experience",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_software development",
+                "label": "software development",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_design thinking",
+                "label": "design thinking",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_mobile app development",
+                "label": "mobile app development",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_interactive kiosks",
+                "label": "interactive kiosks",
+                "group": "Tag"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_kudos-software.co.uk",
+                "target": "industry_Information Technology",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_kudos-software.co.uk",
+                "target": "tag_user experience",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_kudos-software.co.uk",
+                "target": "tag_software development",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_kudos-software.co.uk",
+                "target": "tag_design thinking",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_kudos-software.co.uk",
+                "target": "tag_mobile app development",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_kudos-software.co.uk",
+                "target": "tag_interactive kiosks",
+                "label": "TAGGED_AS"
+            }
+        ]
+    }
+}

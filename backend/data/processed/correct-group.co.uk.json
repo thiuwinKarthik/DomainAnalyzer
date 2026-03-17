@@ -1,0 +1,100 @@
+{
+    "profile": {
+        "company_name": "Correct-group",
+        "short_description": "A leading provider of IT solutions and services.",
+        "long_description": "Founded in the UK with a strong presence across Europe, Correct-group specializes in delivering comprehensive information technology (IT) consultancy, software development, and managed service providers. With over two decades of experience, they have established themselves as an industry leader by offering innovative solutions that help businesses optimize their IT infrastructure for better efficiency and productivity.",
+        "industry": "Information Technology",
+        "sub_industry": "IT Consultancy & Software Development",
+        "sector": "Technology Services",
+        "products_services": [
+            "Consultancy services",
+            "Custom software development",
+            "Managed IT services"
+        ],
+        "tags": "Corporate Governance, Technology Solutions, Business Process Optimization, Managed Service Providers, Software Development",
+        "domain": "correct-group.co.uk",
+        "tech_stack": [],
+        "sic_code": "62012",
+        "sic_text": "Business and domestic software development",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_correct-group.co.uk",
+                "label": "Correct-group",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Information Technology",
+                "label": "Information Technology",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_Corporate Governance",
+                "label": "Corporate Governance",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_Technology Solutions",
+                "label": "Technology Solutions",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_Business Process Optimization",
+                "label": "Business Process Optimization",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_Managed Service Providers",
+                "label": "Managed Service Providers",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_Software Development",
+                "label": "Software Development",
+                "group": "Tag"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_correct-group.co.uk",
+                "target": "industry_Information Technology",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_correct-group.co.uk",
+                "target": "tag_Corporate Governance",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_correct-group.co.uk",
+                "target": "tag_Technology Solutions",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_correct-group.co.uk",
+                "target": "tag_Business Process Optimization",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_correct-group.co.uk",
+                "target": "tag_Managed Service Providers",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_correct-group.co.uk",
+                "target": "tag_Software Development",
+                "label": "TAGGED_AS"
+            }
+        ]
+    }
+}

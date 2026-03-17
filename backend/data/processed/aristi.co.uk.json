@@ -1,0 +1,99 @@
+{
+    "profile": {
+        "company_name": "Aristi",
+        "short_description": "A leading provider of innovative solutions in the financial sector.",
+        "long_description": "Founded with a vision to revolutionize how businesses operate, Aristi has established itself as an industry leader by offering cutting-edge technology and services. The company specializes in providing comprehensive digital transformation strategies that enable organizations to streamline their operations for maximum efficiency and profitability.",
+        "industry": "Financial Services",
+        "sub_industry": "Digital Transformation Consulting",
+        "sector": "Information Technology & Business Solutions",
+        "products_services": [
+            "digital transformation strategy development",
+            "enterprise software integration"
+        ],
+        "tags": "finance, digital transformation, IT consultancy, business efficiency, enterprise solutions",
+        "domain": "aristi.co.uk",
+        "tech_stack": [],
+        "sic_code": "64999",
+        "sic_text": "Financial intermediation not elsewhere classified",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_aristi.co.uk",
+                "label": "Aristi",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Financial Services",
+                "label": "Financial Services",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_finance",
+                "label": "finance",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_digital transformation",
+                "label": "digital transformation",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_IT consultancy",
+                "label": "IT consultancy",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_business efficiency",
+                "label": "business efficiency",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_enterprise solutions",
+                "label": "enterprise solutions",
+                "group": "Tag"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_aristi.co.uk",
+                "target": "industry_Financial Services",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_aristi.co.uk",
+                "target": "tag_finance",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_aristi.co.uk",
+                "target": "tag_digital transformation",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_aristi.co.uk",
+                "target": "tag_IT consultancy",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_aristi.co.uk",
+                "target": "tag_business efficiency",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_aristi.co.uk",
+                "target": "tag_enterprise solutions",
+                "label": "TAGGED_AS"
+            }
+        ]
+    }
+}

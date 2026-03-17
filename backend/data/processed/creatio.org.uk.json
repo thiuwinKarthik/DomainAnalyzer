@@ -1,0 +1,100 @@
+{
+    "profile": {
+        "company_name": "Creatio",
+        "short_description": "A creative agency specializing in branding and digital marketing.",
+        "long_description": "Founded as a boutique design studio, Creatio has grown into an innovative full-service advertising agency. With expertise spanning from graphic design to comprehensive social media campaigns, the company prides itself on delivering creative solutions that resonate with modern audiences.",
+        "industry": "Advertising and Marketing",
+        "sub_industry": "Creative Services Agency",
+        "sector": "Marketing & Advertising",
+        "products_services": [
+            "Branding Consultation",
+            "Digital Campaign Management",
+            "Graphic Design"
+        ],
+        "tags": "creativity, brand strategy, digital marketing, graphic design, social media",
+        "domain": "creatio.org.uk",
+        "tech_stack": [],
+        "sic_code": "70210",
+        "sic_text": "Public relations and communications activities",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_creatio.org.uk",
+                "label": "Creatio",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Advertising and Marketing",
+                "label": "Advertising and Marketing",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_creativity",
+                "label": "creativity",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_brand strategy",
+                "label": "brand strategy",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_digital marketing",
+                "label": "digital marketing",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_graphic design",
+                "label": "graphic design",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_social media",
+                "label": "social media",
+                "group": "Tag"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_creatio.org.uk",
+                "target": "industry_Advertising and Marketing",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_creatio.org.uk",
+                "target": "tag_creativity",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_creatio.org.uk",
+                "target": "tag_brand strategy",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_creatio.org.uk",
+                "target": "tag_digital marketing",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_creatio.org.uk",
+                "target": "tag_graphic design",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_creatio.org.uk",
+                "target": "tag_social media",
+                "label": "TAGGED_AS"
+            }
+        ]
+    }
+}
