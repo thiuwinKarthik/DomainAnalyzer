@@ -1,0 +1,111 @@
+{
+    "profile": {
+        "company_name": "Jacob-ai",
+        "short_description": "A leading provider of AI-powered solutions for businesses.",
+        "long_description": "Jacob-ai is dedicated to revolutionizing the way businesses operate by leveraging advanced artificial intelligence technologies. Our team specializes in developing cutting-edge applications that enhance productivity, decision-making, and customer experiences across various industries.",
+        "industry": "Information Technology",
+        "sub_industry": "Software Development & Services",
+        "sector": "Information Technology",
+        "products_services": [
+            "AI-powered Business Solutions",
+            "Customer Experience Optimization"
+        ],
+        "tags": "AI, Business Solutions, Productivity Enhancement, Decision-Making Support, Customer Experience Improvement",
+        "domain": "jacob-ai.com",
+        "tech_stack": [
+            "React"
+        ],
+        "sic_code": "62012",
+        "sic_text": "Business and domestic software development",
+        "text": "",
+        "full_address": "",
+        "phone": "",
+        "sales_phone": "",
+        "fax": "",
+        "mobile": "",
+        "other_numbers": "",
+        "email": "",
+        "hours_of_operation": ""
+    },
+    "graph": {
+        "nodes": [
+            {
+                "id": "company_jacob-ai.com",
+                "label": "Jacob-ai",
+                "group": "Company"
+            },
+            {
+                "id": "industry_Information Technology",
+                "label": "Information Technology",
+                "group": "Industry"
+            },
+            {
+                "id": "tag_AI",
+                "label": "AI",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_Business Solutions",
+                "label": "Business Solutions",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_Productivity Enhancement",
+                "label": "Productivity Enhancement",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_Decision-Making Support",
+                "label": "Decision-Making Support",
+                "group": "Tag"
+            },
+            {
+                "id": "tag_Customer Experience Improvement",
+                "label": "Customer Experience Improvement",
+                "group": "Tag"
+            },
+            {
+                "id": "tech_React",
+                "label": "React",
+                "group": "Technology"
+            }
+        ],
+        "edges": [
+            {
+                "source": "company_jacob-ai.com",
+                "target": "industry_Information Technology",
+                "label": "OPERATES_IN"
+            },
+            {
+                "source": "company_jacob-ai.com",
+                "target": "tag_AI",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_jacob-ai.com",
+                "target": "tag_Business Solutions",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_jacob-ai.com",
+                "target": "tag_Productivity Enhancement",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_jacob-ai.com",
+                "target": "tag_Decision-Making Support",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_jacob-ai.com",
+                "target": "tag_Customer Experience Improvement",
+                "label": "TAGGED_AS"
+            },
+            {
+                "source": "company_jacob-ai.com",
+                "target": "tech_React",
+                "label": "USES_TECH"
+            }
+        ]
+    }
+}

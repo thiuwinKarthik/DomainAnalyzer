@@ -5,6 +5,8 @@ import CompanyDetails from './components/CompanyDetails';
 import GraphVisualization from './components/GraphVisualization';
 import LoadingSpinner from './components/LoadingSpinner';
 
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8000';
+
 function App() {
   const [companyData, setCompanyData] = useState(null);
   const [graphData, setGraphData] = useState(null);
@@ -19,7 +21,7 @@ function App() {
 
     try {
       // Fetch company data
-      const response = await fetch(`http://localhost:8000/api/lookup?domain=${encodeURIComponent(domain)}`);
+      const response = await fetch(`${API_BASE_URL}/api/lookup?domain=${encodeURIComponent(domain)}`);
       
       if (!response.ok) {
         const errorData = await response.json();
@@ -38,7 +40,7 @@ function App() {
 
       // Fetch graph data
       try {
-        const graphResponse = await fetch(`http://localhost:8000/api/graph/${encodeURIComponent(domain)}`);
+        const graphResponse = await fetch(`${API_BASE_URL}/api/graph/${encodeURIComponent(domain)}`);
         if (graphResponse.ok) {
           const graph = await graphResponse.json();
           // Validate graph data

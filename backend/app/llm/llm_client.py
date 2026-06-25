@@ -1,18 +1,19 @@
 import requests
 import json
-from app.config import LLM_MODEL, LLM_TIMEOUT
+from app.config import LLM_BASE_URL, LLM_MODEL, LLM_TIMEOUT, LLM_NUM_CTX
 
 class LLMClient:
     def __init__(self):
         self.model = LLM_MODEL
-        self.api_url = "http://127.0.0.1:11434/api/generate"
+        self.api_url = f"{LLM_BASE_URL}/api/generate"
         self.timeout = LLM_TIMEOUT
 
-        print("Sending request to:", self.api_url)
+        print(f"LLM endpoint: {self.api_url}")
+        print(f"LLM model: {self.model}")
 
     def query_json(self, prompt: str):
         try:
-            print(f"🧠 Asking Phi-3 ({self.model})...")
+            print(f"Asking local Ollama model: {self.model}")
 
             payload = {
                 "model": self.model,
@@ -21,7 +22,7 @@ class LLMClient:
                 "stream": False,
                 "options": {
                     "temperature": 0.1,
-                    "num_ctx": 4096
+                    "num_ctx": LLM_NUM_CTX
                 }
             }
 
@@ -35,17 +36,17 @@ class LLMClient:
                 result = response.json()
                 return result.get("response", "{}")
             else:
-                print(f"❌ Ollama API Error: {response.status_code} - {response.text}")
+                print(f"Ollama API error: {response.status_code} - {response.text}")
                 return "{}"
 
         except requests.exceptions.ConnectionError as e:
-            print("❌ Connection Error:", e)
+            print("Ollama connection error:", e)
             return "{}"
 
         except requests.exceptions.Timeout:
-            print("❌ Ollama Timeout: Model took too long to respond.")
+            print("Ollama timeout: model took too long to respond.")
             return "{}"
 
         except Exception as e:
-            print(f"❌ Ollama Error: {e}")
+            print(f"Ollama error: {e}")
             return "{}"

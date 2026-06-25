@@ -45,7 +45,16 @@ npm start
 
 ## API Integration
 
-The frontend connects to the backend API at `http://localhost:8000`:
+The frontend connects to backend using:
+- `REACT_APP_API_BASE_URL` (if set)
+- otherwise default `http://localhost:8000`
+
+Example `.env`:
+```bash
+REACT_APP_API_BASE_URL=http://localhost:8000
+```
+
+API endpoints:
 - `GET /api/lookup?domain={domain}` - Fetch company data
 - `GET /api/graph/{domain}` - Fetch graph data
 
@@ -53,7 +62,7 @@ The frontend connects to the backend API at `http://localhost:8000`:
 
 - React 18
 - vis-network for graph visualization
-- Axios for API calls
+- Browser fetch API for requests
 - Custom CSS for styling
 
 
